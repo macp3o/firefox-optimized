@@ -25,8 +25,9 @@ In the filter box below the address bar, type the filter keyword from the table 
 | 7   | workers    | dom.workers.sharedWorkers.enabled | false | |
 | 8   | zoom         | browser.zoom.updateBackgroundTabs | false | less UI freezes on zoom|
 | 9   | gmp            | media.gmp-provider.enabled | false | faster video playback|
-| 10 | autostart | browser.tabs.remote.autostart| false | makes FF49 usable|
-| 11 | autostart | browser.tabs.remote.autostart.2 | false | makes FF49 usable |
+| 10   | webm            | media.webm.enabled | false | faster video playback|
+| 11 | autostart | browser.tabs.remote.autostart| false | makes FF49 usable|
+| 12 | autostart | browser.tabs.remote.autostart.2 | false | makes FF49 usable |
 
 #### No IPv6
 The first setting disables IPv6 lookups. Apply only if IPv6 is not available in your network (which is frequently the case). It does not make Firefox noticeably faster, but reduces lag and makes me feel better :)
@@ -43,11 +44,11 @@ Settings 6-7 limit web workers. Web workers were freezing the desktop UI by acce
 #### UI Zoom
 Setting 8 minimizes freezes to the UI after zooming in or out.
 
-#### No H.264 Video
-Setting 9 forces Firefox to not use H.264 video, since it's not yet hardware optimized on Linux and Windows.
+#### No H.264 or Webm Video
+Settings 9 and 10 forces Firefox to not use H.264 or webm video, since their not yet hardware optimized on Linux and Windows.
 
 #### No Multi-process Firefox
-Settings 10 and 11 toggle FF multi-process off. Multi-process blocks the display of all tabs and windows for several minutes (sometimes 10, 15, 20 minutes) when using the default settings and more than a few tabs or windows open. Disabling multi-process makes it fast again.
+Settings 11 and 12 toggle FF multi-process off. Multi-process blocks the display of all tabs and windows for several minutes (sometimes 10, 15, 20 minutes) when using the default settings and more than a few tabs or windows open. Disabling multi-process makes it fast again.
 
 
 ## License
